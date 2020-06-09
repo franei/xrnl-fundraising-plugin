@@ -1,10 +1,9 @@
 # XRNL Fundraising plugin
 
 #### This plugin does 3 things:
-- Adds a per-day counter to the `post_meta` data of the `/donate` page
-- Redirects to the URL specified in the `get_redirect_url` function
+- Adds a per-day counter of requests for the `/donate` page in `post_meta` data
 - Provides a shortcode which outputs table rows with the per-day counts
-
+- Redirects to the URL specified in the `get_redirect_url` function
 
 #### To use:
 1. Install and activate the plugin
