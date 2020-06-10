@@ -47,7 +47,7 @@ function xrnlf_update_count($postID)
 
 function xrnlf_uri_handler()
 {
-  if (preg_match('/donate/', $_SERVER["REQUEST_URI"])) {
+  if (preg_match('/^\/(en\/)?donate\/?$/', $_SERVER["REQUEST_URI"])) {
     $donate_page = get_page_by_path('/donate');
     xrnlf_update_count($donate_page->ID);
     $lang = get_locale() === 'en_US' ? 'en' : 'nl';
