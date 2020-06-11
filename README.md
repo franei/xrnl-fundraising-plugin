@@ -8,11 +8,11 @@
 #### To use:
 1. Install and activate the plugin
 2. Turn off the current `.htaccess` redirect
-3. Create a page, e.g. extinctionrebellion.nl/fundraising, and paste something like this into it:
+3. Create a page, e.g. extinctionrebellion.nl/fundraising, and paste in something like this:
 
 ```html
+<h4>Donate button clicks per day</h4>
 <table class="table">
-<caption>Visits to the Donate page</caption>
   <thead class="thead-light">
     <tr>
       <th scope="col">#</th>
@@ -24,4 +24,14 @@
     [xrnl-fundraising]
   </tbody>
 </table>
+```
+
+4. Add some javascript for easy copying to a spreadsheet
+```html
+<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+<script>new ClipboardJS('.btn');</script>
+
+<button class="btn" data-clipboard-target=".table">
+    Copy table to clipboard
+</button>
 ```
