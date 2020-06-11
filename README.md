@@ -26,12 +26,15 @@
 </table>
 ```
 
-4. Add some javascript for easy copying to a spreadsheet
+4. Add some javascript for easy copying to a spreadsheet  
+
 ```html
 <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
 <script>new ClipboardJS('.btn');</script>
-
 <button class="btn" data-clipboard-target=".table">
     Copy table to clipboard
 </button>
 ```
+
+##### Screenshot:
+![Fundraising screenshot](screenshot.png)
