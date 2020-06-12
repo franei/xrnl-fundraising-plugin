@@ -8,14 +8,7 @@
 
 function get_redirect_url($lang)
 {
-  switch ($lang) {
-    case 'nl':
-      return 'https://www.whydonate.nl/fundraising/help-extinction-rebellion-nederland/nl';
-      break;
-    case 'en':
-      return 'https://www.whydonate.nl/fundraising/help-extinction-rebellion-nederland/en';
-      break;
-  }
+  return 'https://www.whydonate.nl/fundraising/help-extinction-rebellion-nederland/' . $lang;
 }
 
 function xrnlf_shortcode()
